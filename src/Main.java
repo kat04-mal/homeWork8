@@ -5,10 +5,8 @@ public class Main {
         //Задача 1
         System.out.println("\nЗадача 1");
         int firstFriday = 4;
-        for (int i = 1; i <= 31; i++){
-            if ((i - firstFriday)%7 == 0){
-                System.out.println("Сегодня пятница " + i + " число. Необходимо подготовить отчёт");
-            }
+        for ( ; firstFriday <= 31; firstFriday +=7){
+                System.out.println("Сегодня пятница " + firstFriday + " число. Необходимо подготовить отчёт");
         }
 
         //Задача 2
@@ -16,6 +14,8 @@ public class Main {
         System.out.println("\nЦикл do-while");
         int distance = 42195;
         int distanceTravel = 0;
+        distance = distance - 500;
+        distanceTravel = distanceTravel + 500;
         do {
             System.out.println("Держитесь. Осталось " + distance + " метров" );
             distance = distance - 500;
@@ -23,7 +23,8 @@ public class Main {
         }
         while (distanceTravel <= 42195);
         System.out.println("\nЦикл for");
-        for (int totalDistance = 42195; totalDistance >= 0; totalDistance = totalDistance - 500){
+        int totalDistance = 42195 - 500;
+        for (; totalDistance >= 0; totalDistance = totalDistance - 500){
             System.out.println("Держитесь. Осталось " + totalDistance + " метров");
         }
         //Задача 3
