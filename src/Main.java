@@ -4,8 +4,8 @@ public class Main {
     public static void main(String[] args) {
         //Задача 1
         System.out.println("\nЗадача 1");
-        int firstFriday = 4;
-        for ( ; firstFriday <= 31; firstFriday +=7){
+        int firstFriday;
+        for (firstFriday = 4; firstFriday <= 31; firstFriday +=7){
                 System.out.println("Сегодня пятница " + firstFriday + " число. Необходимо подготовить отчёт");
         }
 
